@@ -1,19 +1,34 @@
-<!--Harry Turner II - 09/16/2024 -->
-<!-- DOCTYPE is the first Tag on the page and it tells the browser that this is an HTML5 Page -->
+<!-- Harry Turner II - 10/07/2024 -->
+<!-- DOCTYPE defines a web page and follows HTML5 standards -->
 <!DOCTYPE html>
-<!-- HTML Tag goes next -->
-<html>
-<!-- The head section has info for the browser and search engine -->
+<html lang="en"> <!-- Add the language attribute -->
+<!-- The <head> section contains meta-information about the document, including its title, 
+character encoding, and links to external resources. -->
 <head>
-    <title>CSC 102 Home Page</title>
+    <meta charset="UTF-8"> <!-- Specify character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
+    <!-- The <title> tag specifies the title of the web page, which appears in the browser tab and search engine results. -->
+    <title>CSC102 Moving Image</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="movingImagestyle.css">
 </head>
-<!-- The body section holds the text and images that we want to show to the user -->
+<!-- The body section holds the visible content of the web page, including text, images, buttons, etc. -->
 <body>
-    <h1>Welcome to my CSC102 Home Page</h1>
-<!-- p is the paragraph tag; has spacing around it by default -->
-    <p>
-<!-- img is for the Image Tag -->
-        <img id="memeImage" src="codingmeme.jpeg">
-    </p>
+    <!-- The <h1> tag is used for the main heading of the page, indicating the primary topic or purpose. -->
+    <h1>Welcome to My CSC102 Moving Image Page</h1>
+
+    <!-- Start button -->
+    <button id="startButton">Start</button>
+
+    <!-- Stop button -->
+    <button id="stopButton">Stop</button>
+
+    <!-- Meme image that will move randomly -->
+    <img id="movingMeme" src="movingMeme.jpeg" alt="Meme Image">
+
+    <!-- Link to the external JavaScript file -->
+    <script src="movingImage.js"></script>
+<!-- The </body> tag signifies the end of the body section, which contains all visible content. -->
 </body>
+<!-- The </html> tag indicates the end of the HTML document. -->
 </html>
