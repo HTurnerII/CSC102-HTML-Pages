@@ -1,0 +1,37 @@
+<!-- Harry Turner II - 10/07/2024 -->
+<!DOCTYPE html> <!--DOCTYPE html Specifies the document as HTML5 -->
+<html lang="en"> <!-- Defines the document type and sets the language to English -->
+<head> <!-- The <head> element contains meta-information about the webpage -->
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness by setting the viewport -->
+  <title>CSC102 Intro To Programming | Palindrome Checker with Audio</title> <!-- Sets the title of the webpage displayed on the browser tab -->
+  <link rel="stylesheet" href="PalindromeStyle.css"> <!-- Links the external CSS file for styling -->
+</head>
+<body> <!-- The <body> element contains all the visible content of the webpage -->
+
+  <div class="container"> <!-- Main content container -->
+    <h1>Palindrome Checker</h1> <!-- Primary heading displaying the purpose of the page -->
+    
+    <audio id="myAudio" controls loop>
+      <source src="relaxing-music.mp3" type="audio/mpeg">
+      Your browser does not support the audio element. <!-- Fallback message for browsers that don't support audio -->
+    </audio>
+    
+    <div class="message" id="resultMessage"></div> <!-- Placeholder where palindrome result feedback will be displayed -->
+  </div>
+
+  <br> <!-- Line break to add spacing between the content -->
+
+  <!-- Text input where the user enters a word or phrase to check for palindrome -->
+  <input type="text" id="userInput" placeholder="Enter a word or phrase"><br> <!-- Placeholder gives a hint inside the text box -->
+
+  <!-- Button to trigger the palindrome check -->
+  <button onclick="checkPalindrome()">Check Palindrome</button><br> <!-- Calls the checkPalindrome function when clicked -->
+
+  <!-- Button to allow the user to check another word -->
+  <button onclick="promptAnotherWord()">Enter Another Word</button><br> <!-- Calls the promptAnotherWord function when clicked -->
+
+  <!-- Links the external JavaScript file for functionality -->
+  <script src="Palindromes.js"></script>
+</body>
+</html>
