@@ -1,0 +1,100 @@
+/* Reset basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height for body and HTML */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; /* Light background */
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+    width: 200px; /* Set a fixed width for the nav */
+    position: absolute; /* Allow free positioning */
+    top: 100px; /* Adjust this value to control vertical positioning */
+    left: 20px; /* Align to the left edge */
+}
+
+nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* Section Styles */
+section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100%; /* Fill available space */
+    width: 300%; /* Full width */
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Adjust width */
+    max-width: 1200px; /* Optional: Cap the width for large screens */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto; /* Ensure it's centered horizontally */
+}
+
+/* Table Header and Data Cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styles */
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}

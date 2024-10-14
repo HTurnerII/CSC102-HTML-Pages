@@ -1,0 +1,63 @@
+/* To ensure the body fills the screen */
+body {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+nav {
+    height: 100px;
+    width: 0px;
+    float: left;
+    line-height: 30px;
+    text-wrap: nowrap;
+    color: white;
+}
+
+nav ul li {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+/* Basic styles for buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 30%;
+    cursor: pointer;
+}
+/* Sets the background color of the Start button to green */
+#startButton {
+    background-color: green;
+    color: white;
+}
+/* Sets the background color of the Stop button to red */
+#stopButton {
+    background-color: red;
+    color: white;
+}
+
+/* Meme image styling */
+#movingMeme {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 50px;
+    left: 380px;
+    transition: top 0.5s ease, left 0.5s ease; /* Smooth transitions */
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: -32px;
+  }

@@ -1,0 +1,87 @@
+/* Set a background gradient for the entire page */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f7cac9, #92a8d1);
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(174, 0, 255);
+}
+
+/* Style the main container that holds the content */
+.container {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(174, 0, 255);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+nav {
+  color: rgb(174, 0, 255);
+  height: 100px;
+  width: 0px;
+  float: left;
+  line-height: 30px;
+  text-wrap: nowrap;
+}
+
+a {
+  color: rgb(174, 0, 255);
+}
+
+/* Style the input box for user strings */
+input[type="text"] {
+  color: rgb(174, 0, 255);
+  padding: 10px;
+  font-size: 16px;
+  width: 45%;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgb(174, 0, 255);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons */
+button {
+  background-color: #92a8d1;
+  color: rgb(174, 0, 255);
+  border: none;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/* Add hover effect on the buttons */
+button:hover {
+  background-color: #f7cac9;
+}
+
+/* Style the message that shows palindrome feedback */
+.message {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Style the palindrome feedback when it's positive */
+.message.palindrome {
+  color: rgb(174, 0, 255); /* The color for palindrome */
+}
+
+/* Style the palindrome feedback when it's negative */
+.message.not-palindrome {
+  color: #f44336; /* Red for not palindrome */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: rgb(174, 0, 255);
+  margin-top: 6%;
+}

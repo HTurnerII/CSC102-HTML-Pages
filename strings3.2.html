@@ -1,0 +1,68 @@
+<!--Harry Turner II -->
+<!--Description: A simple form validation to unlock a secret message -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC102 Secret Message Unlock</title>
+  <link rel="stylesheet" href="SecretMessageUnlockStyle.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+      <h1>Secret Message Page</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav> <!-- Navigation Section: Provides links to navigate between different pages -->
+    <h2>Navigation</h2> <!-- Secondary heading for the navigation menu -->
+    <ul>
+      <!-- Navigation links to other pages -->
+      <li><a href="./index2.1.html">Home</a></li> <!-- Link to the Home page -->
+      <li><a href="./boards.html">Boards</a></li> <!-- Link to the Boards page -->
+      <li><a href="./game.html">Game</a></li> <!-- Link to the Game page -->
+      <li><a href="./strings3.1.html">Palindrome</a></li> <!-- Link to the Palindrome page -->
+      <li><a href="./index4.1.html">Moving Meme</a></li> <!-- Link to the Home page w/Moving Meme -->
+      <li><a href="./strings4.2.html">Palindrome w/Audio</a></li> <!-- Link to the Palindrome page w/Audio -->
+      <li><a href="./table.html">Table</a></li> <!-- Link to the Table page -->
+    </ul>
+  </nav> <!-- Closes the navigation section -->
+
+      <div class="container">
+        <!-- Form to collect user input -->
+        <form id="userForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" placeholder="Enter your 5-digit zip code" pattern="\d{5}" required>
+        
+        <div class="error" id="errorMessage"></div>
+
+        <!-- Submit button -->
+        <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <div id="secretMessage" class="success hidden">
+          <h3>Secret Message: Welcome to the hidden club!</h3>
+        </div>
+      </div>
+
+      <script src="SecretMessageUnlock.js"> 
+        </script>
+          <footer>
+            <p>Harry Turner II</p>
+            <p>University of Advancing Technology</p>
+            <address>
+                2625 W. Baseline Road,<br>
+                Tempe, AZ 85283
+            </address>
+        </footer>
+        
+</body>
+</html>

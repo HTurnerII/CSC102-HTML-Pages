@@ -1,0 +1,45 @@
+/* 
+declaration block
+
+selector{
+    property1: value1;
+    property2:value2;
+    property3:value3;
+}
+*/
+
+body {
+    background-color: darkcyan;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    text-align: center; /* Centers the text horizontally */
+    padding: 10px; /* Optional: Adds some spacing */
+}
+
+nav {
+    height: 0px;
+    width: 0px;
+    float: left;
+    line-height: 30px;
+    text-wrap: nowrap;
+}
+
+section {
+        margin-top: -3%;  /* Remove extra space above */
+        margin-left: 16%;
+}
+
+#memeImage {
+    display: flex;
+    margin: 0px auto;
+    width: 300px;
+}
+
+footer {
+    padding: 3%;
+    text-align: center;
+    color: #000000;
+}

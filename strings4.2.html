@@ -1,0 +1,66 @@
+<!-- Harry Turner II - 10/07/2024 -->
+<!DOCTYPE html> <!--DOCTYPE html Specifies the document as HTML5 -->
+<html lang="en"> <!-- Defines the document type and sets the language to English -->
+
+<head> <!-- The <head> element contains meta-information about the webpage -->
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness by setting the viewport -->
+  <title>CSC102 Palindrome Checker w/Audio</title> <!-- Sets the title of the webpage displayed on the browser tab -->
+  <link rel="stylesheet" href="PalindromeaudioStyle.css"> <!-- Links the external CSS file for styling -->
+</head>
+
+<!-- The <body> element contains all the visible content of the webpage -->
+<div>
+  <!-- Header Section -->
+  <header>
+      <!-- The <h1> tag is used for the main heading of the page, indicating the primary topic or purpose. -->
+      <h1>Palindrome Checker</h1>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav> <!-- Navigation Section: Provides links to navigate between different pages -->
+    <h2>Navigation</h2> <!-- Secondary heading for the navigation menu -->
+    <ul>
+      <!-- Navigation links to other pages -->
+      <li><a href="./index2.1.html">Home</a></li> <!-- Link to the Home page -->
+      <li><a href="./boards.html">Boards</a></li> <!-- Link to the Boards page -->
+      <li><a href="./game.html">Game</a></li> <!-- Link to the Game page -->
+      <li><a href="./strings3.1.html">Palindrome</a></li> <!-- Link to the Palindrome page -->
+      <li><a href="./strings3.2.html">Validation</a></li> <!-- Link to the Validation page -->
+      <li><a href="./index4.1.html">Moving Meme</a></li> <!-- Link to the Home page w/Moving Meme -->
+      <li><a href="./table.html">Table</a></li> <!-- Link to the Table page -->
+  </ul>
+</nav> <!-- Closes the navigation section -->
+
+<audio id="myAudio" controls loop>
+  <source src="relaxing-music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element. <!-- Fallback message for browsers that don't support audio -->
+</audio>
+
+  <div class="container"> <!-- Main content container -->
+    <div class="message" id="resultMessage"></div> <!-- Placeholder where palindrome result feedback will be displayed -->
+  </div>
+  <br> <!-- Line break to add spacing between the content -->
+  <!-- Text input where the user enters a word or phrase to check for palindrome -->
+  <input type="text" id="userInput" placeholder="Enter a word or phrase"><br> <!-- Placeholder gives a hint inside the text box -->
+
+  <!-- Button to trigger the palindrome check -->
+  <button onclick="checkPalindrome()">Check Palindrome</button><br> <!-- Calls the checkPalindrome function when clicked -->
+
+  <!-- Button to allow the user to check another word -->
+  <button onclick="promptAnotherWord()">Enter Another Word</button><br> <!-- Calls the promptAnotherWord function when clicked -->
+
+  <!-- Links the external JavaScript file for functionality -->
+  <script src="palindromeaudio.js"></script>
+
+  <footer>
+    <p>Harry Turner II</p>
+    <p>University of Advancing Technology</p>
+    <address>
+      2625 W. Baseline Road,<br>
+      Tempe, AZ 85283
+    </address>
+  </footer>
+
+</body>
+</html>

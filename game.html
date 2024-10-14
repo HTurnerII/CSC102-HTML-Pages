@@ -1,0 +1,70 @@
+<!-- Harry Turner II -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+    <title>CSC102 Melting Snowman Game</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="main2.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Melting Snowman Game</h1> <!-- Main title of the game -->
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <h2>Navigation</h2> <!-- Subheading for navigation -->
+        <ul> <!-- Unordered list for navigation links -->
+            <li><a href="./index2.1.html">Home</a></li> <!-- Link to home page -->
+            <li><a href="./boards.html">Boards</a></li> <!-- Link to boards page -->
+            <li><a href="./strings3.1.html">Palindrome</a></li> <!-- Link to palindrome page -->
+            <li><a href="./strings3.2.html">Validation</a></li> <!-- Link to validation page -->
+            <li><a href="./index4.1.html">Moving Meme</a></li> <!-- Link to moving meme page -->
+            <li><a href="./strings4.2.html">Palindrome w/Audio</a></li> <!-- Link to audio palindrome page -->
+            <li><a href="./table.html">Table</a></li> <!-- Link to table page -->
+        </ul>
+    </nav>
+    
+    <div class="container"> <!-- Container for game elements -->
+        <div class="meltingSnowman"></div> <!-- Div for visual representation of the melting snowman -->
+        <div class="word"></div> <!-- Div for displaying the word to guess -->
+        <div class="letters"></div> <!-- Div for showing guessed letters -->
+        <div class="message"></div> <!-- Div for displaying messages like win/loss -->
+        <div class="game-controls"> <!-- Div for game control buttons -->
+            <button id="info-button">Game Rules</button> <!-- Button to show game rules -->
+            <br><br> <!-- Adds vertical spacing -->
+            <button onclick="initializeGame()">Reset Game</button> <!-- Button to reset the game -->
+        </div>
+        
+        <div id="rules-modal" class="rules-modal" style="display:none;"> <!-- Modal for game rules, initially hidden -->
+            <div class="modal-content"> <!-- Container for the content of the modal -->
+                <span class="close">&times;</span> <!-- Close icon for the modal -->
+                <h3>Game Rules</h3> <!-- Subheading for game rules -->
+                <p> <!-- Paragraph for game rules -->
+                    1. The goal of the game is to guess the word one letter at a time.<br> <!-- Rule 1 -->
+                    2. The words are related to web development and programming.<br> <!-- Rule 2 -->
+                    3. You can guess one letter by clicking on the buttons below the word.<br> <!-- Rule 3 -->
+                    4. Each wrong guess brings the snowman closer to a complete meltdown.<br> <!-- Rule 4 -->
+                    5. You have up to 6 wrong guesses before the game ends.<br> <!-- Rule 5 -->
+                    6. If you guess the word correctly before the snowman melts, you win! <!-- Rule 6 -->
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <br> <!-- Adds a line break -->
+    
+    <script src="MeltingSnowman.js"></script> <!-- Links to the external JavaScript file for game logic -->
+    
+    <footer> <!-- Footer section of the webpage -->
+        <p>Harry Turner II</p> <!-- Author's name -->
+        <p>University of Advancing Technology</p> <!-- Author's affiliation -->
+        <address> <!-- Address section -->
+            2625 W. Baseline Road,<br> <!-- Street address -->
+            Tempe, AZ 85283 <!-- City, state, and ZIP code -->
+        </address>
+    </footer>
+</body>
+</html>
